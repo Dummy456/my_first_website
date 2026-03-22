@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Structure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h1 id="main-title">Hello, World!</h1>
+        <p>Organized like a pro.</p>
+        <button class="btn" id="helloBtn">Click Me</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+* Prevents card from touching edges on mobile */
+        }
+
+        .card {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 400px; /* Limits size on desktop */
+            transition: all 0.3s ease;
+        }
+
+        h1 {
+            color: #1a73e8;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            width: 100%; /* Full width button is easier to tap on mobile */
+            transition: all 0.3s ease;
+        }
+
+        /* --- MEDIA QUERY FOR MOBILE --- */
+        @media (max-width: 480px) {
+            .card {
+                padding: 1.5rem; /* Less padding to save space */
+            }
+
+            h1 {
+                font-size: 1.8rem; /* Smaller text for smaller screens */
+            }
+
+            .btn {
+                padding: 12px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1 id="main-title">Hello, World!</h1>
+        <p>This layout adapts to your screen.</p>
+        <button class="btn" onclick="sayHello()">Click Me</button>
+    </div>
+
+    <script>
+        function sayHello() {
+            alert("Responsive and Functional!");
+            document.getElementById("main-title").innerHTML = "Mobile Ready!";
+            document.getElementById("main-title").style.color = "#34a853";
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById('helloBtn');
+    const title = document.getElementById('main-title');
+
+    button.addEventListener('click', () => {
+        alert("Files are connected and working!");
+        title.innerHTML = "Success!";
+        title.style.color = "#34a853";
+    });
+});
